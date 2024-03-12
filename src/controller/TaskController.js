@@ -38,8 +38,6 @@ exports.read=async (req,res)=>{
 }
 
 
-
-
 exports.delete=async (req,res)=>{
     try{
         let email=req.headers['email'];

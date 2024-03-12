@@ -3,9 +3,7 @@ const UserController=require('../controller/UserController');
 const TaskController=require('../controller/TaskController');
 const AuthMiddleware=require('../middleware/AuthMiddleware');
 
-
 const router=express.Router();
-
 
 router.post("/registration",UserController.registration);
 router.post("/login",UserController.login);
@@ -18,7 +16,6 @@ router.get("/passwordReset/:email/:otp/:password",UserController.passwordReset)
 // After Login
 router.get("/profileDetails",AuthMiddleware,UserController.profileDetails);
 router.post("/profileUpdate",AuthMiddleware,UserController.profileUpdate);
-
 
 
 // Task Create, Task Update, Task Delete, Task Read

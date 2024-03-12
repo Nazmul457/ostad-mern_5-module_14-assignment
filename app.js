@@ -22,7 +22,7 @@ app.use(limiter);
 
 
 //Database Connection
-let URL="mongodb://localhost:27017/taskmern5"
+let URL="mongodb://localhost:27017/todolist_assignment"
 let OPTION={user:"",pass:"",autoIndex:true}
 mongoose.connect(URL,OPTION).then((res)=>{
     console.log("Database Connected")
